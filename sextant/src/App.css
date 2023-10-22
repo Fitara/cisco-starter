@@ -1,0 +1,24 @@
+.banner {
+  color: black;
+  text-align: center;
+  box-shadow: 0 1em 0 lightblue;
+  padding: 0.5em;
+}
+
+.banner p {
+  font-size: 2em;
+  font-weight: 600;
+  color: rgb(0, 0, 100);
+}
+
+.exhibit {
+  padding: 20px;
+  margin: 40px 20px;
+  border: 1px solid lightskyblue;
+  background-color: whitesmoke;
+}
+
+.exhibit p {
+  font-size: 1.25em;
+  margin-bottom: 10px;
+}

@@ -1,19 +1,18 @@
-import { useState } from 'react'
+import React from 'react';
+import Banner from './components/Banner';
+import Exhibit from './components/Exhibit';
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App: React.FC = () => {
   return (
-    <>
-      <h1>Vite + React</h1>
-      <div>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-      </div>
-    </>
-  )
+    <div className="app">
+      <Banner title="Sextant Dashboard" />
+      <Exhibit title="Featured Items">
+        {/* Children components and content go here */}
+      </Exhibit>
+    </div>
+  );
 }
 
-export default App
+export default App;
+
