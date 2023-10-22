@@ -1,15 +1,19 @@
-import React from 'react';
+import logo from "../assets/cisco-logo.png";
 
-interface BannerProps {
-  title: string;
-}
+// interface BannerProps {
+//   title: string;
+// }
 
-const Banner: React.FC<BannerProps> = ({ title }) => {
+export default function Banner() {
   return (
-    <div className="banner">
-      <p>{title}</p>
+    <div className='banner-container'>
+      <div className='banner-wrapper'>
+        <div className='banner-logo'>
+          <img src={logo} alt='Logo'/>
+        </div>
+        <p className='banner-title'>Sextant Dashboard</p>
+      </div>
+      <div className='bg-banner'></div>
     </div>
   );
 }
-
-export default Banner;

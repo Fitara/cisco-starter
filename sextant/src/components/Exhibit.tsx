@@ -5,15 +5,11 @@ interface ExhibitProps {
   children: React.ReactNode;
 }
 
-const Exhibit: React.FC<ExhibitProps> = ({ title, children }) => {
+export default function Exhibit({ title, children }:ExhibitProps) {
   return (
     <div className="exhibit">
-      <p>{title}</p>
-      <div className="exhibit-content">
-        {children}
-      </div>
+      <h2 className="exhibit-title">{title}</h2>
+      <div className="exhibit-content">{children}</div>
     </div>
   );
 }
-
-export default Exhibit;
