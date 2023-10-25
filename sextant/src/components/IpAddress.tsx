@@ -26,9 +26,9 @@ export default function IpAddress({ version }: IpProps) {
   }, [version]);
 
   return (
-    <div className="ip-wrapper">
+    <div className="ip-container">
       {loading ? (
-        <div className="loading-container">
+        <div className="loading-wrapper">
           <div className="loading"></div>
         </div>
       ) : (

@@ -78,8 +78,10 @@
 
 .exhibit {
   flex: 1;
+  height: 30vh;
+  display: flex;
   margin: 20px 20px;
-  height: max-content;
+  flex-direction: column;
   background-color: whitesmoke;
   border: 1px solid lightskyblue;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -94,14 +96,22 @@
 }
 
 .exhibit-content {
+  display: flex;
   padding: 0.5em;
   font-size: 1.25em;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.ip-container {
+  display: flex;
 }
 
 .ip-wrapper {
   display: flex;
+  flex-direction: column;
   line-height: 1.5;
-  height: 100%;
 }
 
 .ip-content {
@@ -118,7 +128,14 @@
   color: rgba(1, 1, 100, 0.9);
 }
 
-.loading-container {
+.latency {
+  background-color: rgba(1, 1, 100, 0.9);
+  align-items: baseline;
+  color: #FFFFFF;
+  padding: 0.25em;
+}
+
+.loading-wrapper {
   display: flex;
   align-items: center;
   margin: 5px auto;
