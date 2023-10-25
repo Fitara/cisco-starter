@@ -29,19 +29,19 @@
   width: 5em;
 }
 
-.banner-wrapper p {
-  width: 85%;
-  font-size: 1.5em;
-  font-weight: 900;
-  text-align: center;
-  color: rgb(0, 50, 110);
-}
-
 .banner-logo {
   width: 15%;
   display: flex;
   justify-content: center;
   border-right: 1px solid lightgray;
+}
+
+.banner-title {
+  width: 85%;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  color: rgb(0, 50, 110);
 }
 
 .bg-banner {
@@ -130,6 +130,7 @@
 
 .latency {
   background-color: rgba(1, 1, 100, 0.9);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   align-items: baseline;
   color: #FFFFFF;
   padding: 0.25em;
